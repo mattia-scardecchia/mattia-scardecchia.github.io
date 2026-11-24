@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mattia Scardecchia</title>
+  <meta name="description" content="Mattia Scardecchia, PhD student at NYU Courant.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <header class="intro">
+    <div class="intro-text">
+      <h1>Mattia Scardecchia</h1>
+      <p class="role">PhD student, NYU Courant</p>
+      <nav class="links">
+        <a id="email" href="#" data-user="mattia.scardecchia" data-domain="nyu.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=r49Bg08AAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/mattia-scardecchia/">LinkedIn</a>
+        <a href="https://github.com/mattia-scardecchia">GitHub</a>
+      </nav>
+    </div>
+    <img class="photo" src="images/mattia.jpg" alt="Photo of Mattia Scardecchia" width="433" height="433">
+  </header>
+
+  <section class="bio">
+    <p>I am a second-year PhD student at NYU Courant, advised by Prof. <a href="https://sherryy.github.io/">Sherry Yang</a>. Broadly, my research aims to (i) enable learning from experience for acting in the physical world, through reinforcement learning and world models, and (ii) use tools from statistical mechanics to understand local and distributed learning, as a route to energy-efficient machine learning and to computational models of the brain.</p>
+    <p>I received my MSc in Artificial Intelligence and BSc in Mathematical and Computing Sciences for Artificial Intelligence from Bocconi University, where I was advised by Prof. <a href="https://www.unibocconi.it/en/faculty/riccardo-zecchina">Riccardo Zecchina</a>. I've also worked as an AI Research Engineer at <a href="https://bendingspoons.com/">Bending Spoons</a> on <a href="https://remini.ai/">Remini</a>, an AI photo-editing app with about 70 million monthly users, and as a Research Scientist intern at <a href="https://ai.sony/">Sony AI</a> on <a href="https://ace.ai.sony/">Project Ace</a>, the table-tennis robot featured on the <a href="https://www.nature.com/nature/volumes/652/issues/8111">cover of <i>Nature</i></a>.</p>
+  </section>
+
+  <section>
+    <h2>Selected publications</h2>
+    <ul class="pubs">
+      <li>
+        <!-- Built by tools/make_preprint_thumb.py from the paper's fig_setting drawing code. -->
+        <img class="pub-thumb" src="images/pub-predictable-latents.svg" alt="Diagram: frames are encoded, a temporal objective acts on the latents, and the decoder also sees the past frame" loading="lazy">
+        <div>
+          <div class="pub-title">Video World Models Need Predictable Latents</div>
+          <div class="pub-venue">arXiv preprint, 2026</div>
+          <div class="pub-authors"><b>Mattia Scardecchia</b>, Sherry Yang</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2610.34663">[Paper]</a> <a href="https://github.com/mattia-scardecchia/predictable-latents">[Code]</a></div>
+        </div>
+      </li>
+      <li>
+        <img class="pub-thumb" src="images/pub-darnn.svg" alt="Diagram of a deep asymmetric recurrent network with input, hidden layers and output" loading="lazy">
+        <div>
+          <div class="pub-title">Dynamical Learning in Deep Asymmetric Recurrent Neural Networks</div>
+          <div class="pub-venue">Physical Review Research, 2026</div>
+          <div class="pub-authors">Davide Badalotti, Carlo Baldassi, Marc Mézard, <b>Mattia Scardecchia</b>, Riccardo Zecchina <span class="pub-note">(alphabetical order)</span></div>
+          <div class="pub-links"><a href="https://doi.org/10.1103/lbr6-91sn">[Paper]</a> <a href="https://github.com/mattia-scardecchia/Biological-Learning">[Code]</a></div>
+        </div>
+      </li>
+      <li>
+        <img class="pub-thumb" src="images/pub-nature.jpg" alt="The Ace robot returning a ball in a match, with the Nature cover of 23 April 2026 inset" loading="lazy">
+        <div>
+          <div class="pub-title">Outplaying Elite Table Tennis Players with an Autonomous Robot</div>
+          <div class="pub-venue">Nature, 2026</div>
+          <div class="pub-authors">Peter Dürr, Mireille El Gheche, …, <b>Mattia Scardecchia</b>, …, Peter Stone, Michael Spranger</div>
+          <div class="pub-links"><a href="https://www.nature.com/articles/s41586-026-10338-5">[Paper]</a> <a href="https://ace.ai.sony/">[Website]</a></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</main>
+<footer>Last updated November 2026.</footer>
+
+<script>
+  // The address is assembled at load so it never appears whole in the HTML that scrapers read.
+  var e = document.getElementById('email');
+  e.href = 'mailto:' + e.dataset.user + '@' + e.dataset.domain;
+</script>
+
+</body>
+</html>
